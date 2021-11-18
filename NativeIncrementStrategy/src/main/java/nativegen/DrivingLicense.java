@@ -1,8 +1,20 @@
-package hilo;
+package nativegen;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
+@Entity
+@Table(name = "DRIVINGLICENSE")
+@GenericGenerator(name = "nativegen", strategy = "native" )
 public class DrivingLicense {
+
+	@Id
+	@GeneratedValue(generator = "nativegen")
 	private Integer licenseNumber;
 	private String name;
 	private Integer age;
