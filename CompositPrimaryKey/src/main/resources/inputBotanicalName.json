@@ -1,0 +1,63 @@
+[
+  {
+    "genericName": "Allium",
+    "speciesName": "cepa",
+    "family": "Amaryllidaceae",
+    "commonName": "Onion"
+  },
+  {
+    "genericName": "Solanum",
+    "speciesName": "tubersum",
+    "family": "Nightshade",
+    "commonName": "Potato"
+  },
+  {
+    "genericName": "Cucumis",
+    "speciesName": "sativas",
+    "family": "Cucurbits",
+    "commonName": "Cucumber"
+  },
+  {
+    "genericName": "Lactuca",
+    "speciesName": "sativa",
+    "family": "Daisy family",
+    "commonName": "Lettuce"
+  },
+  {
+    "genericName": "Daucas",
+    "speciesName": "carota",
+    "family": "Umbellifers",
+    "commonName": "Carrot"
+  },
+  {
+    "genericName": "Lycopersican",
+    "speciesName": "esculentum",
+    "family": "Solanaceae",
+    "commonName": "Tomato"
+  },
+  {
+    "genericName": "Mangifera",
+    "speciesName": "indica",
+    "family": "Cashews",
+    "commonName": "Mango"
+  },
+  {
+    "genericName": "Citrus",
+    "speciesName": "Limonium",
+    "family": "Rutaceae",
+    "commonName": "Lemon"
+  },
+  {
+    "genericName": "Citrus",
+    "speciesName": "aurantium",
+    "family": "Rutaceae",
+    "commonName": "Orange"
+  },
+  {
+    "genericName": "Allium",
+    "speciesName": "sativum",
+    "family": "Amaryllidaceae",
+    "commonName": "Garlic"
+  }
+
+]

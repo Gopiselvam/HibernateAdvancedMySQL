@@ -10,6 +10,6 @@
         <property name="hibernate.connection.password">Jakty@123</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
-        <mapping class="nativegen.DrivingLicense"/>
+        <mapping class="com.botanicalnames.idclass.BotanicalNames"/>
     </session-factory>
 </hibernate-configuration>
