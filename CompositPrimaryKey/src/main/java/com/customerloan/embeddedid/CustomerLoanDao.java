@@ -20,11 +20,19 @@ public class CustomerLoanDao {
 
     }
 
-    public void getCustomerLoan(Integer customerId, String loanId) {
+    public CustomerLoan getCustomerLoan(Integer customerId, String loanId) {
 
         Session session = HibernateUtil.getSessionFactory().openSession();
 
+        CustomerLoanPK customerLoanPK = new CustomerLoanPK();
+        customerLoanPK.setCustomerId(customerId);
+        customerLoanPK.setLoanId(loanId);
+
+        CustomerLoan loan = session.get(CustomerLoan.class, customerLoanPK);
+
         session.close();
+
+        return loan;
 
     }
 }
