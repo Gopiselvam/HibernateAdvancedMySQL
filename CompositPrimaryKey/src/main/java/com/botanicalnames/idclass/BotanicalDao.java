@@ -21,7 +21,15 @@ public class BotanicalDao {
     }
 
     public BotanicalNames getPlantDetails(String genericName, String speciesName) {
+        Session session = HibernateUtil.getSessionFactory().openSession();
 
-        return null;
+        BotanicalNamesPK pk = new BotanicalNamesPK();
+        pk.setGenericName(genericName);
+        pk.setSpeciesName(speciesName);
+
+        BotanicalNames res = session.get(BotanicalNames.class, pk);
+
+        session.close();
+        return res;
     }
 }
