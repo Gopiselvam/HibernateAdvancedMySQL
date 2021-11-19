@@ -9,6 +9,8 @@ public class BotanicalNamesPK implements Serializable {
 
     private String speciesName;
 
+    public BotanicalNamesPK(){}
+
     public BotanicalNamesPK(String genericName, String speciesName) {
         System.out.println("using BotanicalNamesPK consturcutor");
         this.genericName = genericName;
