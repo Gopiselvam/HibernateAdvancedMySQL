@@ -1,4 +1,4 @@
-Hibernate Advanced concepts <br/>
+**Hibernate Advanced concepts** <br/>
 ============================ <br/>
 1. Identifier generation strategy
 2. Composite primary key
@@ -11,7 +11,7 @@ Hibernate Advanced concepts <br/>
 9. Hibernate Events
 10. Interceptors
 <br/>
-Java Tech stacks <br/>
+**Java Tech stacks** <br/>
 ================= <br/>
-1. Excel sheet to Java Object conversion
-2. JSON to java Object conversion
+- Excel sheet to Java Object conversion
+- JSON to java Object conversion
