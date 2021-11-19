@@ -10,3 +10,8 @@ Hibernate Caching
 Hibernate Envers
 Hibernate Events
 Interceptors
+\n
+Java Tech stacks
+=================
+1. Excel sheet to Java Object conversion
+2. JSON to java Object conversion
