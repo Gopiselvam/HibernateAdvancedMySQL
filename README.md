@@ -13,3 +13,8 @@
 **Java Tech stacks**
 - Excel sheet to Java Object conversion
 - JSON to java Object conversion
+- Java reflections. Getting the field names
+
+**Advice**
+- use "\\|" while splitting pipelines instead of "|"
+- Always remember to implement Serializable for Composit primary keys
