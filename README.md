@@ -11,7 +11,9 @@
 9. Hibernate Events
 10. Interceptors
 <br/>
-**Java Tech stacks** <br/>
-================= <br/>
+**Java Tech stacks**
+<br/>
+================= 
+<br/>
 - Excel sheet to Java Object conversion
 - JSON to java Object conversion
