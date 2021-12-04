@@ -2,9 +2,9 @@ package inheritance.singletable;
 
 import java.util.Scanner;
 
-public class PlantService {
+public class PlantServiceSingleTable {
 
-    private PlantsDao dao = new PlantsDao();
+    private PlantsDaoSingleTable dao = new PlantsDaoSingleTable();
     private Scanner sc = new Scanner(System.in);
     public void plantService(){
 
