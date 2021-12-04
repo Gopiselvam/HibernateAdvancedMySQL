@@ -1,0 +1,11 @@
+# addNewCustomerService
+Gopi
+19-09-1995
+Theni
+9632587410
+2
+Savings
+500000.00
+Current
+100.00
+

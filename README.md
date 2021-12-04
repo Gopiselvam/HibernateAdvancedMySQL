@@ -14,7 +14,12 @@
 - Excel sheet to Java Object conversion
 - JSON to java Object conversion
 - Java reflections. Getting the field names
+- java LocalDate parsing
+- Generating Random Long numbers
+- ALTER TABLE customer AUTO_INCREMENT = 1001; to start the primary key from 1001
 
 **Advice**
 - use "\\|" while splitting pipelines instead of "|"
 - Always remember to implement Serializable for Composit primary keys
+- use session.persist() if you are using CascadeType.PERSIST
+- copy paste variable names from code wherever createQuery method is used.
