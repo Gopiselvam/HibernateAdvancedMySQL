@@ -1,0 +1,1 @@
+CREATE TABLE plantinheritance (plantName VARCHAR(50) NOT NULL, kind VARCHAR(50), flowerColor VARCHAR(50), usefulPart VARCHAR(50), PRIMARY KEY (plantName));
