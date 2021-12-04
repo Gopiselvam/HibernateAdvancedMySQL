@@ -10,8 +10,13 @@
         <property name="hibernate.connection.password">Jakty@123</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
-        <mapping class="inheritance.singletable.PlantEntity"/>
-        <mapping class="inheritance.singletable.MedicinalPlantEntity"/>
-        <mapping class="inheritance.singletable.OrnamentalPlantEntity"/>
+
+<!--        <mapping class="inheritance.singletable.PlantEntity"/>-->
+<!--        <mapping class="inheritance.singletable.MedicinalPlantEntity"/>-->
+<!--        <mapping class="inheritance.singletable.OrnamentalPlantEntity"/>-->
+
+        <mapping class="inheritance.joined.MedicinalPlantEntity"/>
+        <mapping class="inheritance.joined.PlantEntity"/>
+        <mapping class="inheritance.joined.OrnamentalPlantEntity"/>
     </session-factory>
 </hibernate-configuration>

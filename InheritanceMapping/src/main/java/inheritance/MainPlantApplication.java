@@ -1,13 +1,16 @@
 package inheritance;
 
-import inheritance.singletable.PlantService;
+import inheritance.joined.PlantServiceJoined;
+import inheritance.singletable.PlantServiceSingleTable;
 
 public class MainPlantApplication {
 
-    private static  PlantService service = new PlantService();
+    private static PlantServiceSingleTable serviceSingleTable = new PlantServiceSingleTable();
+    private static PlantServiceJoined serviceJoined = new PlantServiceJoined();
 
     public static void main(String[] args) {
         HibernateUtils.createSessionFactory();
-        service.plantService();
+//        serviceSingleTable.plantService();
+        serviceJoined.plantService();
     }
 }
