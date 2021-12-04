@@ -18,3 +18,12 @@ leaves
 
 2
 onion
+
+##########
+
+for Table per class
+
+1
+tulsi
+Ram tulsi
+3

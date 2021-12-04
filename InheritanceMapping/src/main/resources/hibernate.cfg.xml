@@ -15,8 +15,13 @@
 <!--        <mapping class="inheritance.singletable.MedicinalPlantEntity"/>-->
 <!--        <mapping class="inheritance.singletable.OrnamentalPlantEntity"/>-->
 
-        <mapping class="inheritance.joined.MedicinalPlantEntity"/>
-        <mapping class="inheritance.joined.PlantEntity"/>
-        <mapping class="inheritance.joined.OrnamentalPlantEntity"/>
+<!--        <mapping class="inheritance.joined.MedicinalPlantEntity"/>-->
+<!--        <mapping class="inheritance.joined.PlantEntity"/>-->
+<!--        <mapping class="inheritance.joined.OrnamentalPlantEntity"/>-->
+
+
+        <mapping class="inheritance.tableperclass.MedicinalPlantEntity"/>
+        <mapping class="inheritance.tableperclass.PlantEntity"/>
+        <mapping class="inheritance.tableperclass.OrnamentalPlantEntity"/>
     </session-factory>
 </hibernate-configuration>

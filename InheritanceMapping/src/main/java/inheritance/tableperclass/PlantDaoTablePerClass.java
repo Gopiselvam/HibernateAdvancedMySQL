@@ -1,10 +1,11 @@
-package inheritance.singletable;
+package inheritance.tableperclass;
 
 import inheritance.HibernateUtils;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-public class PlantsDaoSingleTable {
+public class PlantDaoTablePerClass {
+
 
     public void addPlant(PlantEntity plantEntity){
         Session session = HibernateUtils.getSessionFactory().openSession();
@@ -17,9 +18,10 @@ public class PlantsDaoSingleTable {
     public PlantEntity getPlant(String plantName){
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction tx = session.beginTransaction();
-        inheritance.singletable.PlantEntity plantEntity = session.get(PlantEntity.class, plantName);
+        PlantEntity plantEntity = session.get(PlantEntity.class, plantName);
         tx.commit();
         session.close();
         return plantEntity;
     }
+
 }
