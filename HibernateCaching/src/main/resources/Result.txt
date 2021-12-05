@@ -1,0 +1,87 @@
+1) First level cache - get method
+
+Session session = HibernateUtils.getSessionFactory().openSession();
+session.get(TourEntity.class, "INDSING5C");
+System.out.println("First Read");
+session.get(TourEntity.class, "INDSING5C");
+System.out.println("Second Read");
+//sessionFactory.getCache().evictAllRegions();
+Session session2 = HibernateUtils.getSessionFactory().openSession();
+session2.get(TourEntity.class, "INDSING5C");
+System.out.println("Third Read");
+-------------------------------------------------------------------------------
+Hibernate: select tourentity0_.tripId as tripid1_0_0_, tourentity0_.days as days2_0_0_, tourentity0_.headCount as headcoun3_0_0_, tourentity0_.tripFare as tripfare4_0_0_, tourentity0_.tripFrom as tripfrom5_0_0_, tourentity0_.tripTo as tripto6_0_0_ from TOUR_ENTITY tourentity0_ where tourentity0_.tripId=?
+First Read
+Second Read
+Hibernate: select tourentity0_.tripId as tripid1_0_0_, tourentity0_.days as days2_0_0_, tourentity0_.headCount as headcoun3_0_0_, tourentity0_.tripFare as tripfare4_0_0_, tourentity0_.tripFrom as tripfrom5_0_0_, tourentity0_.tripTo as tripto6_0_0_ from TOUR_ENTITY tourentity0_ where tourentity0_.tripId=?
+Third Read
+
+
+================================================================================
+
+2) First level cache - load method
+
+Session session = HibernateUtils.getSessionFactory().openSession();
+session.load(TourEntity.class, "INDSING5C");
+System.out.println("First Read");
+session.load(TourEntity.class, "INDSING5C");
+System.out.println("Second Read");
+//sessionFactory.getCache().evictAllRegions();
+Session session2 = HibernateUtils.getSessionFactory().openSession();
+session2.load(TourEntity.class, "INDSING5C");
+System.out.println("Third Read");
+
+
+----------------------------------------------------------------------------
+
+First Read
+Second Read
+Third Read
+
+
+==========================================================================
+
+2) Second level caching - get method
+
+Session session = HibernateUtils.getSessionFactory().openSession();
+session.get(TourEntity.class, "INDSING5C");
+System.out.println("First Read");
+session.get(TourEntity.class, "INDSING5C");
+System.out.println("Second Read");
+//sessionFactory.getCache().evictAllRegions();
+Session session2 = HibernateUtils.getSessionFactory().openSession();
+session2.get(TourEntity.class, "INDSING5C");
+System.out.println("Third Read");
+-------------------------------------------------------------------------------
+
+Hibernate: select tourentity0_.tripId as tripid1_0_0_, tourentity0_.days as days2_0_0_, tourentity0_.headCount as headcoun3_0_0_, tourentity0_.tripFare as tripfare4_0_0_, tourentity0_.tripFrom as tripfrom5_0_0_, tourentity0_.tripTo as tripto6_0_0_ from TOUR_ENTITY tourentity0_ where tourentity0_.tripId=?
+First Read
+Second Read
+Third Read
+
+
+==============================================================================
+
+
+4) Second level cache - evicting objects from second level cache
+
+Session session = HibernateUtils.getSessionFactory().openSession();
+session.get(TourEntity.class, "INDSING5C");
+System.out.println("First Read");
+session.get(TourEntity.class, "INDSING5C");
+System.out.println("Second Read");
+HibernateUtils.getSessionFactory().getCache().evictAllRegions();
+Session session2 = HibernateUtils.getSessionFactory().openSession();
+session2.get(TourEntity.class, "INDSING5C");
+System.out.println("Third Read");
+
+-----------------------------------------------------------------------
+
+
+Hibernate: select tourentity0_.tripId as tripid1_0_0_, tourentity0_.days as days2_0_0_, tourentity0_.headCount as headcoun3_0_0_, tourentity0_.tripFare as tripfare4_0_0_, tourentity0_.tripFrom as tripfrom5_0_0_, tourentity0_.tripTo as tripto6_0_0_ from TOUR_ENTITY tourentity0_ where tourentity0_.tripId=?
+First Read
+Second Read
+Hibernate: select tourentity0_.tripId as tripid1_0_0_, tourentity0_.days as days2_0_0_, tourentity0_.headCount as headcoun3_0_0_, tourentity0_.tripFare as tripfare4_0_0_, tourentity0_.tripFrom as tripfrom5_0_0_, tourentity0_.tripTo as tripto6_0_0_ from TOUR_ENTITY tourentity0_ where tourentity0_.tripId=?
+Third Read
+
+========================================================================
