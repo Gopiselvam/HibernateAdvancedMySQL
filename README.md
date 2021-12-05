@@ -23,3 +23,4 @@
 - Always remember to implement Serializable for Composit primary keys
 - use session.persist() if you are using CascadeType.PERSIST
 - copy paste variable names from code wherever createQuery method is used.
+- Make sure REVINFO, REV column is AUTO_INCREMENT. (HibernateEnvers)
