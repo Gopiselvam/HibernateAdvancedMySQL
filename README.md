@@ -11,8 +11,8 @@
 10. Interceptors
 
 **Java Tech stacks**
-- Excel sheet to Java Object conversion
-- JSON to java Object conversion
+- Excel sheet to Java Object conversion (eg: NativeIncrementStrategy, CriteriaAPI)
+- JSON to java Object conversion (eg: compositPrimaryKey)
 - Java reflections. Getting the field names
 - java LocalDate parsing
 - Generating Random Long numbers
