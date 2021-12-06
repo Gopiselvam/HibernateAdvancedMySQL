@@ -1,0 +1,6 @@
+CREATE TABLE ACCOUNT_EVENTS (accountNumber INT, accountOpeningDate DATE,
+balance DOUBLE, PRIMARY KEY (accountNumber));
+
+DESCRIBE ACCOUNT_EVENTS;
+
+SELECT * FROM ACCOUNT_EVENTS;
