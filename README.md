@@ -17,6 +17,7 @@
 - java LocalDate parsing
 - Generating Random Long numbers
 - ALTER TABLE customer AUTO_INCREMENT = 1001; to start the primary key from 1001
+- log4j.properties with Loggers
 
 **Advice**
 - use "\\|" while splitting pipelines instead of "|"
